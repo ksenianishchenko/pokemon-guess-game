@@ -9,7 +9,8 @@ Here is a working <a href="#0">live demo</a>
 * RESTful API (PokeAPI)
 
 ## Features
-* Every game you will get 10 random pictures of pokemon's "shadow" with options. You need to guess what is that pokemon.
+* Every game user get 10 random pictures of pokemon's "shadow" with options. User need to answer what is the name of that pokemon.
+* User have limited time (5 sec) for answer.
 * User can see correct answer and short information about current pokemon.
 * See the game score on the result page.
  
