@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #dd1919;
+}
+
+#root {
+  height: 100vh;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-col {
+  align-items: stretch;
+  width: 50%;
+}
+
+.column-diraction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-wrap {
+  max-width: 1100px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.image-wrap {
+  width: 400px;
+  height: 400px;
+  padding: 15px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  &.background {
+    background-size: 100%;
+  }
+}
+
+.image-offset {
+  img {
+    position: absolute;
+    right: -100px;
+    bottom: -30px;
+  }
+}
+
+.image-wrap-auto {
+  width: 100%;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: auto;
+    bottom: auto;
+  }
+}
+
+.image-wrap-sign {
+  width: 150px;
+  height: 220px;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text {
+  margin: 0;
+}
+
+.title {
+  margin: 0;
+  color: #ffcb05;
+
+  svg {
+    fill: #ffcb05;
+  }
+}
+
+.title-h1 {
+  font-size: 72px;
+  font-family: Std, fantasy
+}
+
+.title-h2 {
+  font-size: 52px;
+}
+
+.title-uppercase {
+  text-transform: uppercase;
+}
+
+.title-shadow {
+  text-shadow: 4px 4px 0px #0610f3, 
+  -4px 0 0px #3564ad,
+  7px 4px 0 rgba(158, 139, 236, 0.5);
+}
+
+.block-align-center {
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 48px;
+}
+
+.link-icon {
+  display: inline-flex;
+  align-items: center;
+
+  svg {
+    margin-right: 8px;
+  }
+}
+
+.list-group {
+  display: flex;
+}
+
+.list-group-horizontal {
+  flex-direction: row;
+}
+
+.list-group-vertical {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}

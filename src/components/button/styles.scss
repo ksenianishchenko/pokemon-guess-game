@@ -1,0 +1,83 @@
+.button {
+  margin: 10px;
+  padding: 15px 15px;
+  outline: none;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #008cfb;
+  border-radius: 5px;
+  color: #f6ef05;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #95fc03;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  -moz-transition: box-shadow 0.25s ease-out;
+  -o-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
+  cursor: pointer;
+  margin: 0 auto;
+  font-family: Arial;
+
+  img {
+    width: 11%;
+    height: auto;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 25px rgba(252, 215, 3, 0.9);
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: 0 2px 25px rgba(252, 215, 3, 0.9);
+    outline: none;
+  }
+}
+
+.button-glowing {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.button-glowing:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.button-glowing::after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1495f1;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}

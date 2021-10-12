@@ -1,0 +1,39 @@
+.radio-group-label {
+
+}
+
+.radio-group-input {
+  display: none;
+}
+
+.radio-group-input + .radio-group-label {
+  margin: 10px;
+  padding: 15px 15px;
+  outline: none;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #e4d90e;
+  border-radius: 5px;
+  color: #3309f2;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #3309f2;
+  -webkit-transition: box-shadow 0.25s ease-out;
+  -moz-transition: box-shadow 0.25s ease-out;
+  -o-transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
+  cursor: pointer;
+  font-family: Arial;
+
+  &:hover {
+    box-shadow: 0 5px 20px #0414fc;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: 0 2px 20px rgba(252, 215, 3, 0.9);
+    outline: none;
+  }
+}

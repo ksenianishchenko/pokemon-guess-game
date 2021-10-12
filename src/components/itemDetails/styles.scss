@@ -1,0 +1,66 @@
+.item-details-subtitle {
+  color: #ffcb05;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.types-item {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.stats-title {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+}
+
+.measurment-item {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 0 15px;
+
+  span {
+    font-weight: 300;
+    text-transform: none;
+    display: block;
+    font-size: 14px;
+  }
+}
+
+.stats-wrap {
+  padding-top: 15px;
+}
+
+.stat-item {
+  display: flex;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.stat-item-base {
+  padding: 5px;
+  width: 100%;
+}
+
+.stat-item-name {
+  width: 20%;
+  font-weight: 600;
+}
+
+.range-wrap {
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.range {
+  background-color: #0686ec;
+  border-radius: 5px;
+}
